@@ -137,6 +137,7 @@ namespace BodySnatchers {
 
             if (InSquad(actor)) {
                 WorldTip.instance.show(actor.getName() + " is in another squad", false, "top");
+                return;
             }
 
             if (squad.Count >= maxSize) {
@@ -195,6 +196,7 @@ namespace BodySnatchers {
 
             if (InSquad(actor)) {
                 WorldTip.instance.show(actor.getName() + " is in another squad", false, "top");
+                return;
             }
 
             leader = actor;
